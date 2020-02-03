@@ -1,0 +1,12 @@
+version: '2'
+services:
+    demo-mysql:
+        image: mysql:8.0
+
+        environment:
+            - MYSQL_USER=root
+            - MYSQL_PASSWORD=1234
+            - MYSQL_DATABASE=crediregister
+            - MYSQL_RANDOM_ROOT_PASSWORD=yes
+        ports:
+            - 3306:3306
